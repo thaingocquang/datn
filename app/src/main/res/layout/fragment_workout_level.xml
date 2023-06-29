@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/user_workout_level_frame"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".frontend.authentication.fragments.UserWorkoutLevelFragment">
+
+<RelativeLayout
+    android:id="@+id/fragment_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="@dimen/large_spacing"
+    android:layout_marginTop="@dimen/x_large_spacing"
+    android:layout_marginBottom="@dimen/x_large_spacing"
+    android:background="@drawable/items_container"
+    tools:ignore="UselessParent">
+
+    <ProgressBar
+        android:id="@+id/phase2_progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/medium_plus_spacing"
+        android:max="90"
+        android:progress="60" />
+
+    <TextView
+        android:id="@+id/user_workout_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phase2_progress_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/medium_spacing"
+        android:text="@string/user_workout"
+        android:textColor="@color/light_black"
+        android:textSize="@dimen/medium_text_size"
+        android:textStyle="italic" />
+
+
+
+
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/img_workout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:layout_below="@id/user_workout_label"-->
+<!--        android:layout_marginHorizontal="@dimen/medium_plus_spacing"-->
+<!--        android:layout_marginTop="@dimen/medium_plus_spacing"-->
+
+
+
+<!--        android:src="@drawable/workout_level"-->
+
+<!--        />-->
+
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/info_workout_label"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/img_workout"-->
+<!--        android:layout_marginHorizontal="@dimen/medium_plus_spacing"-->
+<!--        android:layout_marginTop="@dimen/medium_plus_spacing"-->
+<!--        android:text="@string/gender"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="@dimen/small_plus_text_size" />-->
+
+    <RadioGroup
+        android:id="@+id/workout_level_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_workout_label"
+        android:layout_marginHorizontal="@dimen/medium_plus_spacing"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/level_sedentary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sedentary_level"
+            android:textColor="@color/light_black" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/level_sedentary_desc"
+            android:textColor="@color/light_black"/>
+        <RadioButton
+            android:id="@+id/level_slightly_active"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/slightly_active_level"
+            android:textColor="@color/light_black" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/level_slightly_active_desc"
+            android:textColor="@color/light_black"/>
+        <RadioButton
+            android:id="@+id/level_moderately_active"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/moderately_active_level"
+            android:textColor="@color/light_black" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/level_moderately_active_desc"
+            android:textColor="@color/light_black"/>
+        <RadioButton
+            android:id="@+id/level_very_active"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/very_active_level"
+            android:textColor="@color/light_black" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/level_very_active_desc"
+            android:textColor="@color/light_black"/>
+        <RadioButton
+            android:id="@+id/level_extremely_active"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/extremely_active_level"
+            android:textColor="@color/light_black" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/level_extremely_active_desc"
+            android:textColor="@color/light_black"/>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/level_sedentary"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/sedentary_level"-->
+<!--                android:textColor="@color/light_black" />-->
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Ít hoặc không tập thể dục và làm việc văn phòng"-->
+<!--                android:textColor="@color/light_black"/>-->
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/level_slightly_active"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/slightly_active_level"-->
+<!--                android:textColor="@color/light_black" />-->
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Ít hoặc không tập thể dục và làm việc văn phòng"-->
+<!--                android:textColor="@color/light_black"/>-->
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/level_moderately_active"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/moderately_active_level"-->
+<!--                android:textColor="@color/light_black" />-->
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Ít hoặc không tập thể dục và làm việc văn phòng"-->
+<!--                android:textColor="@color/light_black"/>-->
+
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/level_very_active"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/very_active_level"-->
+<!--                android:textColor="@color/light_black" />-->
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Ít hoặc không tập thể dục và làm việc văn phòng"-->
+<!--                android:textColor="@color/light_black"/>-->
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/level_extremely_active"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/extremely_active_level"-->
+<!--                android:textColor="@color/light_black" />-->
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Ít hoặc không tập thể dục và làm việc văn phòng"-->
+<!--                android:textColor="@color/light_black"/>-->
+<!--        </LinearLayout>-->
+
+
+
+
+    </RadioGroup>
+
+
+    <include
+        android:id="@+id/info_transition"
+        layout="@layout/layout_transition_custom_buttons" />
+
+    <include
+        android:id="@+id/info_error_view"
+        layout="@layout/layout_error_custom_view" />
+
+</RelativeLayout>
+
+
+</FrameLayout>

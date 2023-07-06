@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "480304216183",
-    "firebase_url": "https://test-careium-default-rtdb.asia-southeast1.firebasedatabase.app",
-    "project_id": "test-careium",
-    "storage_bucket": "test-careium.appspot.com"
+    "project_number": "317811119576",
+    "firebase_url": "https://datn-foodtracking-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "datn-foodtracking",
+    "storage_bucket": "datn-foodtracking.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:480304216183:android:4e6298693f35ab17846e72",
+        "mobilesdk_app_id": "1:317811119576:android:3411065a841fdc3d45cead",
         "android_client_info": {
           "package_name": "com.example.careium"
         }
       },
       "oauth_client": [
         {
-          "client_id": "480304216183-gos55uo6f5t0367e4ll10rci9ju4jbt8.apps.googleusercontent.com",
+          "client_id": "317811119576-mnssehsnub9bg6rfhq3euc0rqr7s1vbr.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBVnVEMnfdD3nxKikBUcvWp0r1KSD3ipFM"
+          "current_key": "AIzaSyBI1VOLG5Elq1zev6_R-F4xB3kGTxfhPiI"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "480304216183-gos55uo6f5t0367e4ll10rci9ju4jbt8.apps.googleusercontent.com",
+              "client_id": "317811119576-mnssehsnub9bg6rfhq3euc0rqr7s1vbr.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

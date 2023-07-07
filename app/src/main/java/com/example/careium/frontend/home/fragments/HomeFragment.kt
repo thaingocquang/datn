@@ -111,6 +111,34 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         if (user.gender == Gender.Male) bmr += 5
         else bmr -= 161
 
+        val l = user.workoutLevel.toString()
+        var co = 0.0f
+        if (l == "Sedentary") {
+            co = 1.2f
+        }
+        if (l == "SlightlyActive") {
+            co = 1.375f
+        }
+        if (l == "ModeratelyActive") {
+            co = 1.55f
+        }
+        if (l == "VeryActive") {
+            co = 1.725f
+        }
+        if (l == "ExtremelyActive") {
+            co = 1.9f
+        }
+
+        bmr *= co
+
+        if (user.futureGoal.toString() == "LoseWeight") {
+            bmr *= 0.75f
+        }
+
+        if (user.futureGoal.toString() == "GainWeight") {
+            bmr *= 1.1f
+        }
+
         return bmr.toInt()
     }
 

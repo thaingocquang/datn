@@ -3,6 +3,7 @@ package com.example.careium.frontend.home.fragments
 import android.annotation.SuppressLint
 import android.graphics.Color
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.fragment.app.Fragment
@@ -296,13 +297,48 @@ class ReportsFragment : Fragment(R.layout.fragment_reports) {
                     binding.reportWeightTitle.text = getString(R.string.report_gain_weight_title)
                 }
 
-                val remainingCalories = abs(caloriesVal - bmr)
-                val rounded =
-                    String.format("%.1f", remainingCalories / 2500)// 2500 calories for every KG
-                binding.reportWeight.text = "$rounded KG"
+                var bmr2 = (10 * user.weight) + (6.25 * user.height) - (5 * user.age)
+                if (user.gender == Gender.Male) bmr2 += 5
+                else bmr2 -= 161
+
+                var tdee = getTDEEFromBMRAndWorkoutLevel(bmr2, user.workoutLevel.toString())
+
+                if (user.futureGoal.toString()=="LoseWeight") {
+                    val rounded = String.format("%.1f", (tdee*0.25*7) / 2500)
+                    binding.reportWeight.text = "$rounded KG"
+                }
+
+                if (user.futureGoal.toString()=="GainWeight") {
+                    val rounded = String.format("%.1f", (tdee * 0.1 * 7) / 2500)
+                    binding.reportWeight.text = "$rounded KG"
+                }
+//                val remainingCalories = abs(caloriesVal - bmr)
+//                val rounded =
+//                    String.format("%.1f", remainingCalories / 2500)// 2500 calories for every KG
+
             }
 
         }
+    }
+
+    private fun getTDEEFromBMRAndWorkoutLevel(bmr: Double, wl: String): Double{
+        var co = 0.0f
+        if (wl == "Sedentary") {
+            co = 1.2f
+        }
+        if (wl == "SlightlyActive") {
+            co = 1.375f
+        }
+        if (wl == "ModeratelyActive") {
+            co = 1.55f
+        }
+        if (wl == "VeryActive") {
+            co = 1.725f
+        }
+        if (wl == "ExtremelyActive") {
+            co = 1.9f
+        }
+        return bmr * co
     }
 
 }

@@ -122,7 +122,7 @@
 
                 <TextView
                     android:id="@+id/user_height_val"
-                    android:layout_width="wrap_content"
+                    android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/medium_spacing"
                     android:layout_marginTop="@dimen/small_spacing"
@@ -136,7 +136,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/user_height_val"
-                    android:layout_marginStart="@dimen/large_spacing"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="0dp"
                     android:layout_toEndOf="@id/profile_ver_line_age_height"
                     android:paddingTop="@dimen/tiny_spacing"
                     android:text="@string/height"
@@ -152,7 +153,7 @@
                     android:layout_toEndOf="@+id/user_height_val"
                     android:background="@color/green_500" />
 
-                <TextView
+                <EditText
                     android:id="@+id/user_weight_val"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -168,7 +169,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/user_weight_val"
-                    android:layout_marginStart="@dimen/large_spacing"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="0dp"
                     android:layout_toEndOf="@+id/profile_ver_line_height_weight"
                     android:paddingTop="@dimen/tiny_spacing"
                     android:text="@string/weight"

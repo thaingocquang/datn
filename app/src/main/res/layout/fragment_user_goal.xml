@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/phase3_progress_bar"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/medium_spacing"
+            android:layout_marginTop="@dimen/tiny_spacing"
             android:text="@string/user_goal"
             android:textColor="@color/light_black"
             android:textSize="@dimen/medium_text_size"

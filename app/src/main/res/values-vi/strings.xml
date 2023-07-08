@@ -6,7 +6,7 @@
     <string name="something_wrong">Đã xảy ra sự cố!!</string>
     <string name="fill_data">Nhập thông tin của bạn</string>
     <string name="password">Mật khẩu</string>
-    <string name="login_now">Đăng nhập ngay bây giờ</string>
+    <string name="login_now">Đăng nhập</string>
     <string name="forget_password">Quên mật khẩu?</string>
     <string name="user_info">Dữ liệu người dùng</string>
     <string name="user_workout">Cấp độ tập luyện của người dùng</string>
@@ -72,7 +72,7 @@
     <string name="report_lose_weight_title">- Cân nặng giảm dự kiến:</string>
     <string name="report_positive_gained_weight">- Tuần này bạn đang tăng cân và điều này rất tốt cho mục tiêu của bạn</string>
     <string name="report_negative_gained_weight">- Tuần này bạn tăng cân và điều này ngược lại với mục tiêu của bạn</string>
-    <string name="report_positive_lose_weight">- Tuần này bạn đã giảm cân và điều này rất tốt cho mục tiêu của bạn</string>
+    <string name="report_positive_lose_weight">- Tuần này bạn đang giảm cân và điều này rất tốt cho mục tiêu của bạn</string>
     <string name="report_negative_lose_weight">- Tuần này bạn đang giảm cân và điều này ngược lại với mục tiêu của bạn</string>
     <string name="report_careful_message">- HÃY CHÚ Ý với các bữa ăn của bạn trong những tuần tới</string>
     <string name="report_keep_message">- LÀM TỐT, hãy tiếp tục với phạm vi tương tự trong chế độ ăn kiêng của bạn</string>

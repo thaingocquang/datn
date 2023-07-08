@@ -48,21 +48,21 @@ class ReminderFragment : Fragment(R.layout.fragment_reminder) {
 
         setClickListener(
             binding.breakfastTime,
-            "Time For Your Breakfast!!",
+            "Đã đến giờ ăn sáng!!",
             "Breakfast Time",
             binding.breakfastSetButton,
             binding.breakfastCancelButton
         )
         setClickListener(
             binding.lunchTime,
-            "Time For Your Lunch!!",
+            "Đã đến giờ ăn trưa!!",
             "Lunch Time",
             binding.lunchSetButton,
             binding.lunchCancelButton
         )
         setClickListener(
             binding.dinnerTime,
-            "Time For Your Dinner!!",
+            "Đã đến giờ ăn tối!!",
             "Dinner Time",
             binding.dinnerSetButton,
             binding.dinnerCancelButton
@@ -128,7 +128,7 @@ class ReminderFragment : Fragment(R.layout.fragment_reminder) {
         val intent = Intent(context, ReminderNotification::class.java)
         intent.putExtra(
             titleExtra,
-            "Careium Notification Manager"
+            "Food Tracking AI Notification Manager"
         )
         intent.putExtra(
             messageExtra,
